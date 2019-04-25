@@ -1,4 +1,4 @@
-# ~~ liri-bot ~~
+#                                         ~~ liri-bot ~~
 The liri bot is a language interpretation program that has a few functions you can use via the CLI!
 
 # Tech Used:
