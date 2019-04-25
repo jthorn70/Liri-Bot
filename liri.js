@@ -244,12 +244,12 @@ if (process.argv[2]== "spotify-this-song"){
                 height: 75
               }
                
-              asciify(data.tracks.items, options, function (err, asciified) {
-                if (err) throw err;
+            //   asciify(data.tracks.items, options, function (err, asciified) {
+            //     if (err) throw err;
                
-                // Print to console
-                console.log(asciified);
-              });
+            //     // Print to console
+            //     console.log(asciified);
+            //   });
 
     })
     }
