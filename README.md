@@ -2,10 +2,9 @@
 The liri bot is a language interpretation program that has a few functions you can use via the CLI!
 
 ## movie-this
-![alt text](/images/gifs/movie-this.gif "MOVIE-THIS")
-
 type `node liri.js movie-this <YOUR-MOVIE-HERE>`
 This will search the omdb API and return the info of the movie you searched.
+![alt text](/images/gifs/movie-this.gif "MOVIE-THIS")
 
 
 ## spotify-this-song
