@@ -4,6 +4,72 @@ var spotify = require('node-spotify-api');
 var cTable = require('console.table');
 var axios = require("axios");
 var fs = require("fs");
+var asciify = require('asciify-image');
+var memeSearch = require('meme-search')
+
+
+
+
+
+if (process.argv[2] == "meme-this"){
+    var memeName = process.argv.slice(3).join(" ")
+    memeSearch(memeName,{
+        'subreddit': 'dankmemes',
+        'sort': 'relevance'
+    } ,(err, res) => {
+        // console.log(res) // Array of meme objects, each meme object of the format { title, image_url }
+        res = res.slice(0,1)
+        // console.log(res)
+        for (var i = 0; i < res.length; i++){
+            var options = {
+                fit:    'box',
+                width:  75,
+                height: 75
+              }
+               
+              asciify(res[i].image_url, options, function (err, asciified) {
+                if (err) throw err;
+               
+                // Print to console
+                console.log(asciified);
+              });
+        }
+    })
+}
+
+
+
+
+if (process.argv[2] == "meme"){
+
+var options = {
+    fit:    'box',
+    width:  75,
+    height: 75
+  }
+   
+  asciify("https://cdn.discordapp.com/attachments/140183723348852736/570826336608845854/asciimaymay.jpg", options, function (err, asciified) {
+    if (err) throw err;
+   
+    // Print to console
+    console.log(asciified);
+  });
+}
+if (process.argv[2] == "the-game"){
+
+    var options = {
+        fit:    'box',
+        width:  50,
+        height: 50
+      }
+       
+      asciify("https://smallimg.pngkey.com/png/small/129-1292322_circle-game-png-jpg-black-and-white-circle.png", options, function (err, asciified) {
+        if (err) throw err;
+       
+        // Print to console
+        console.log(asciified);
+      });
+    }
 
 
 
@@ -79,6 +145,19 @@ if (process.argv[2]== "spotify-this-song"){
             console.log("Plot: " + response.data.Plot)
             console.log("Actors: " + response.data.Actors)
             console.log("----------------------------")
+
+            var options = {
+                fit:    'box',
+                width:  50,
+                height: 50
+              }
+               
+              asciify(response.data.Poster, options, function (err, asciified) {
+                if (err) throw err;
+               
+                // Print to console
+                console.log(asciified);
+              });
 
         }
     )
@@ -158,6 +237,19 @@ if (process.argv[2]== "spotify-this-song"){
                 console.log("log updated")
 
             })
+
+            var options = {
+                fit:    'box',
+                width:  75,
+                height: 75
+              }
+               
+              asciify(data.tracks.items, options, function (err, asciified) {
+                if (err) throw err;
+               
+                // Print to console
+                console.log(asciified);
+              });
 
     })
     }
