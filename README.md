@@ -1,6 +1,19 @@
 # ~~ liri-bot ~~
 The liri bot is a language interpretation program that has a few functions you can use via the CLI!
 
+#Tech Used:
+  - Spotify NPM
+  -cTable NPM
+  -axios NPM
+  -fs NPM
+  -asciify NPM
+  -memeSearch NPM
+
+
+
+# COMMANDS
+
+
 ## movie-this
 type `node liri.js movie-this <YOUR-MOVIE-HERE>`
 This will search the omdb API and return the info of the movie you searched.
