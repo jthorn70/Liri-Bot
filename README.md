@@ -1,7 +1,7 @@
 # ~~ LIRI-BOT ~~
 The liri bot is a language interpretation program that has a few functions you can use via the CLI!
 
-# Tech Used:
+## Tech Used:
   - Spotify NPM
   - cTable NPM
   - axios NPM
