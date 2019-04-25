@@ -42,13 +42,13 @@ This will read a file called `random.txt` that has instructions on what to run a
 
 # MEMES!
 Here are some funny commands that i have created!
-
+## meme
 type `node liri.js meme` to display a top tier meme created by yours truly, in the console!
 ![alt text](images/gifs/meme.gif "MEME")
-
+## the-game
 type `node liri.js the-game` to play the game!
 ![alt text](images/gifs/the-game.gif "THE-GAME")
-
+## meme-this
 type `node liri.js meme-this <YOUR-MEME-QUERY-HERE>` to display one meme from a designated subreddit.
 ![alt text](images/gifs/meme-this.gif "MEME-THIS")
 
